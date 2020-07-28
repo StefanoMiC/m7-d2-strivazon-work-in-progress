@@ -1,0 +1,17 @@
+.background-div {
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+.book-image {
+  height: 80px;
+  margin-right: 2em;
+}
+
+.book-cover {
+  height: 15em;
+}
+
+.border-thick {
+  border-width: 3px !important;
+}

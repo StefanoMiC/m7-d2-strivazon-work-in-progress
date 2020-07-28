@@ -8,7 +8,7 @@ function App() {
   return (
     <div className="container">
       <div className="row">
-        <div className="col-sm-12">
+        <div className="col-sm-12 text-center background-div">
           {/* <Link to="/"> */}
           <h1>Strivazon Book Store</h1>
           {/* </Link> */}
