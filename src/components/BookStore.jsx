@@ -21,7 +21,11 @@ class BookStore extends Component {
           bookSelected={this.state.bookSelected}
           changeBook={this.changeBook}
         />
-        <BookDetail books={books} bookSelected={this.state.bookSelected} />
+        <BookDetail
+          books={books}
+          bookSelected={this.state.bookSelected}
+          addToCart={this.props.addToCart}
+        />
       </div>
     );
   }
