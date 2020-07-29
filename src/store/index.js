@@ -5,6 +5,9 @@ const initialState = {
   cart: {
     products: [],
   },
+  user: {
+    username: null,
+  },
 };
 
 export default function configureStore() {
