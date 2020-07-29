@@ -18,7 +18,7 @@ class Cart extends Component {
       cart:
         this.props.cart &&
         this.props.cart.map((bookId) =>
-          books.find((book) => book.id == bookId)
+          books.find((book) => book.id === bookId)
         ),
     });
   }
