@@ -1,5 +1,16 @@
 import React, { Component } from "react";
 import Button from "react-bootstrap/Button";
+import { connect } from "react-redux";
+
+const mapStateToProps = (state) => state;
+
+const mapDispatchToProps = (dispatch) => ({
+  addToCart: (id) =>
+    dispatch({
+      type: "ADD_ITEM_TO_CART",
+      payload: id,
+    }),
+});
 
 class BookDetail extends Component {
   constructor(props) {
@@ -56,11 +67,11 @@ class BookDetail extends Component {
     ) : (
       <div className="col-sm-8">
         <div className="row margin-top">
-          <h3> Please select book! </h3>
+          <h3> Please select a book! </h3>
         </div>
       </div>
     );
   }
 }
 
-export default BookDetail;
+export default connect(mapStateToProps, mapDispatchToProps)(BookDetail);
