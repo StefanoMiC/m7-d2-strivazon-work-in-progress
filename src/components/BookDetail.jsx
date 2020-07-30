@@ -32,9 +32,9 @@ class BookDetail extends Component {
 
   render() {
     return this.state.book ? (
-      <div className="col-sm-8">
-        <div className="row mt-3">
-          <div className="col-sm-12">
+      <div className="col-md-8">
+        <div className="row no-gutters mt-2">
+          <div className="col-sm-12 px-0">
             <h1>{this.state.book.title}</h1>
           </div>
           <div className="row mt-3">
@@ -62,15 +62,17 @@ class BookDetail extends Component {
                   BUY
                 </Button>
               ) : (
-                <p>Users must log in to purchase</p>
+                <p>
+                  <u>Users must log in to purchase</u>
+                </p>
               )}
             </div>
           </div>
         </div>
       </div>
     ) : (
-      <div className="col-sm-8">
-        <div className="row margin-top">
+      <div className="col-md-8">
+        <div className="row no-gutters mt-2">
           <h3> Please select a book! </h3>
         </div>
       </div>

@@ -17,7 +17,7 @@ function App() {
         <CartIndicator />
       </div>
       <hr />
-      <div className="container">
+      <div className="container px-0">
         <Route path="/" exact component={BookStore} />
         <Route path="/cart" exact component={Cart} />
       </div>

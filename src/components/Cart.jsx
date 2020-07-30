@@ -39,12 +39,14 @@ class Cart extends Component {
           ))}
         </ul>
         <div className="row">
-          <div className="col-sm-12 font-weight-bold">
+          <div className="col-sm-12 font-weight-bold mb-5">
             TOTAL:{" "}
-            {cart.reduce(
-              (acc, currentValue) => acc + parseFloat(currentValue.price),
-              0
-            )}
+            {cart
+              .reduce(
+                (acc, currentValue) => acc + parseFloat(currentValue.price),
+                0
+              )
+              .toFixed(2)}
           </div>
         </div>
       </div>

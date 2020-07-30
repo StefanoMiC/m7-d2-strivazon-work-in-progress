@@ -1,17 +1,7 @@
 import React from "react";
 
-export default ({
-  id,
-  title,
-  price,
-  imageUrl,
-  changeBook,
-  bookSelected,
-  description,
-  key,
-}) => (
+export default ({ id, title, price, imageUrl, changeBook, bookSelected }) => (
   <li
-    key={key}
     className={bookSelected === id ? "border-thick card mt-3" : "card mt-3"}
     onClick={() => changeBook(id)}
     style={{ cursor: "pointer" }}
